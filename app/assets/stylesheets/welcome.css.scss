@@ -1,0 +1,28 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header-body {
+	padding: 17px 50px 17px 60px;
+	position: relative;
+	width: 914px;
+}
+
+.header-logo {
+	height: 66px;
+	width: 156px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+
+
+.jumbotron {
+  background-image: url('http://www.searchresultsmedia.com/wp-content/uploads/2014/02/web-development.jpg');
+  background-repeat: no-repeat;
+  height:700px;
+}
+
+.mobile-menu{
+	display: inline-block;
+}
