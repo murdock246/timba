@@ -2,27 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.header-body {
-	padding: 17px 50px 17px 60px;
-	position: relative;
-	width: 914px;
-}
-
 .header-logo {
-	height: 66px;
-	width: 156px;
-	display: inline-block;
-	vertical-align: top;
-	margin: 0;
+height: 66px;
+width: 156px;
+display: inline-block;
+vertical-align: top;
+margin: 0;
+background: url(http://cdn1.crowdint.com.global.prod.fastly.net/assets/crowdint-logo-6a753d708c663f12e505bddb9ca36487.png) 0 0 no-repeat;
 }
 
-
-.jumbotron {
-  background-image: url('http://www.searchresultsmedia.com/wp-content/uploads/2014/02/web-development.jpg');
-  background-repeat: no-repeat;
-  height:700px;
-}
-
-.mobile-menu{
+.navbar-nav {
 	display: inline-block;
+	position: absolute;
+	right: 700px;
+	top: 10px;
 }
