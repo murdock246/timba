@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	padding-top: 68px;
+	padding-top: 67px;
 }
 
 .header-logo {
@@ -12,8 +12,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
-	background: image-url("crowdint-logo.png") 0 0 no-repeat;
-	
+	background: image-url("crowdint-logo.png") 0 0 no-repeat;	
 }
 
 .navbar-nav {
@@ -40,16 +39,15 @@ body {
 }
 /*------------------------------------------------------*/
 .headline-home {
-	background-image: url("crowd-bg.png");
+	background-image: image-url("crowd-bg.png");
 	background-color: #007466;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
     background-position: center;
 	padding-top: 170px;
 	text-align: center;
 	margin: auto 0;
-	width: 1840px;
-	height: 590px;
+	
+	height: 560px;
 }
 
 .headline-home h2{
@@ -93,8 +91,7 @@ body {
 	margin: 0 auto;
 	position: relative;
 	background-color: white;
-	
-	padding-top: 2.5em;
+	padding-top: 80px;
 	width: 100%;
 }
 
@@ -110,6 +107,7 @@ body {
 }
 
 .l-normal{
+	padding-top: 10px;
 	font-weight: 900;
 }
 /*------------------------------------------------------*/
@@ -117,21 +115,21 @@ body {
 
 .work-box{
 	display:inline-block;
+	padding-top: 50px;
 }
 
 .work-box .circle-bg-ecommerce{
 	background: #f2f2f2 url("home.png") -224px 0px no-repeat;
-	height: 110px;
+	height: 118px;
 	width: 100px;
-	border-radius: 1em;
+	border-radius: 16px;
 	display: block;
-	left: 3px;
+	left: -5px;
 	position: relative;
 	color: #ffffff;
 	display: inline-block;
 	font-size: 2em;
 	font-weight: 100;
-	height: 3em;
 	line-height: 3em;
 	text-align: center;
 }
@@ -144,21 +142,22 @@ body {
 	color: #505051;
 	height: 120px;
 	width: 240px;
+	padding-bottom: 200px;
+	padding-left:20px;
 }
 
 .work-box .circle-bg-customer{
 	background: #f2f2f2 url("home.png") -123px 0px no-repeat;
-	height: 108px;
+	height: 118px;
 	width: 101px;
 	border-radius: 1em;
 	display: block;
-	left: 3px;
+	left: 20px;
 	position: relative;
 	color: #ffffff;
 	display: inline-block;
 	font-size: 2em;
 	font-weight: 100;
-	height: 3em;
 	line-height: 3em;
 	text-align: center;
 	color: #ffffff;
@@ -166,17 +165,16 @@ body {
 
 .work-box .circle-bg-solutions{
 	background: #f2f2f2 url("home.png") -324px 0px no-repeat;
-	height: 108px;
+	height: 118px;
 	width: 100px;
 	border-radius: 1em;
 	display: block;
-	left: 3px;
+	left: 20px;
 	position: relative;
 	color: #ffffff;
 	display: inline-block;
 	font-size: 2em;
 	font-weight: 100;
-	height: 3em;
 	line-height: 3em;
 	text-align: center;
 }
@@ -336,27 +334,95 @@ line-height: 1.3em;
 	margin-bottom: 1em;
 	margin-top: 0;
 	text-align: center;
-font-size: 2.25em;
-font-weight: 100;
-line-height: 1em;
-display: block;
-font-family: "Roboto", sans-serif;
-color: #505051;
+	font-size: 2.25em;
+	font-weight: 100;
+	line-height: 1em;
+	display: block;
+	font-family: "Roboto", sans-serif;
+	color: #505051;
 }
 
 .l-normal{
 	font-weight: 400;
 	text-align: center;
-font-size: 2.25em;
-line-height: 1em;
-font-family: "Roboto", sans-serif;
-color: #505051;
+	font-size: 2.25em;
+	line-height: 1em;
+	font-family: "Roboto", sans-serif;
+	color: #505051;
 }
 
 
 
+.our-clients .row .col-md-3 .l-wrapper clients .client .gopro{
+	background-color:black;
+}
 
 
+.l-wrapper {
+	margin: 0 auto;
+	width: 1024px;
+	list-style: none;
+	padding: 0;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
 
+.client{
+	display: inline-block;
+	width: 120px;
+	height: 60px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
 
+.our-clients .gopro{
+	width: 120px;
+	height: 37px;
+	background-image: image-url("logos-clientes.png");
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
 
+/*------------------------------------------------------*/
+.footer-home{
+background-image: image-url("footer_grap.png");
+background-position: center bottom;
+background-repeat: no-repeat;
+color: #ffffff;
+height: 440px;
+background-color:#007466;
+display: block;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+line-height: 1.3em;
+}
+
+.l-wrapper footer-body{
+height: 374px;
+padding-top: 4.125em;
+margin: 0 auto;
+width: 1024px;
+display: block;
+color: #ffffff;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+line-height: 1.3em;
+}
+
+.l-wrapper footer-body h3{
+display: block;
+font-weight: 300;
+margin-bottom: 3.7em;
+margin-top: 0;
+text-align: center;
+font-size: 2.25em;
+line-height: 1em;
+color: #ffffff;
+font-family: "Roboto", sans-serif;
+}
