@@ -119,7 +119,7 @@ body {
 }
 
 .work-box .circle-bg-ecommerce{
-	background: #f2f2f2 url("home.png") -224px 0px no-repeat;
+	background: #f2f2f2 image-url("home.png") -224px 0px no-repeat;
 	height: 118px;
 	width: 100px;
 	border-radius: 16px;
@@ -147,7 +147,7 @@ body {
 }
 
 .work-box .circle-bg-customer{
-	background: #f2f2f2 url("home.png") -123px 0px no-repeat;
+	background: #f2f2f2 image-url("home.png") -123px 0px no-repeat;
 	height: 118px;
 	width: 101px;
 	border-radius: 1em;
@@ -164,7 +164,7 @@ body {
 }
 
 .work-box .circle-bg-solutions{
-	background: #f2f2f2 url("home.png") -324px 0px no-repeat;
+	background: #f2f2f2 image-url("home.png") -324px 0px no-repeat;
 	height: 118px;
 	width: 100px;
 	border-radius: 1em;
@@ -197,7 +197,7 @@ body {
 
 .we-do-img{
 	display: block;
-	background: url("home.png") -529px 0px no-repeat;
+	background: image-url("home.png") -529px 0px no-repeat;
 	height: 111px;
 	width: 126px;
 	margin: 0 auto;
@@ -257,7 +257,7 @@ body {
 	margin-left: -15px;
 	width: 104px;
 	height: 50px;
-	background: url("home.png") -425px -31px no-repeat;
+	background: image-url("home.png") -425px -31px no-repeat;
 	display: inline-block;
 	margin-left: 50px;
 	text-align: left;	
@@ -267,7 +267,7 @@ body {
 	margin-left: -15px;
 	width: 123px;
 	height: 50px;
-	background: url("experience.png") -104px 0px no-repeat;
+	background: image-url("experience.png") -104px 0px no-repeat;
 	display: inline-block;
 	margin-left: 50px;
 	text-align: left;	
@@ -276,7 +276,7 @@ body {
 .we-do-box-body .experience_ico_03{
 	width: 124px;
 	height: 50px;
-	background: url("experience.png") -227px 0px no-repeat;
+	background: image-url("experience.png") -227px 0px no-repeat;
 	margin-left: -15px;
 	display: inline-block;
 	margin-left: 50px;
@@ -342,87 +342,189 @@ line-height: 1.3em;
 	color: #505051;
 }
 
-.l-normal{
-	font-weight: 400;
+.our-clients .row .col-md-3 .gopro{
+	background: image-url("logos-clientes.png") -720px -31px no-repeat;
+	width: 120px;
+	height: 37px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+
+}
+.our-clients .row .col-md-3 .igobono{
+	background: image-url("logos-clientes.png") -840px -28px no-repeat;
+	width: 120px;
+	height: 45px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .jiffyshirts{
+	background: image-url("logos-clientes.png") -1080px -18px no-repeat;
+	width: 120px;
+	height: 65px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+
+.our-clients .row .col-md-3 .bebitos{
+	background: image-url("logos-clientes.png") 0px -30px no-repeat;
+	width: 120px;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .muirskate{
+	background: image-url("logos-clientes.png") -1560px -31px no-repeat;
+	width: 120px;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .mightytwenty{
+	background: image-url("logos-clientes.png") -1440px 0px no-repeat;
+	width: 120px;
+	height: 100px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .betterfinance{
+	background: image-url("logos-clientes.png") -120px -38px no-repeat;
+	width: 120px;
+	height: 37px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .interviewjet{
+	background: image-url("logos-clientes.png") -960px -38px no-repeat;
+	width: 120px;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .footcardigan{
+	background: image-url("logos-clientes.png") -600px -31px no-repeat;
+	width: 120px;
+	height: 41px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .clubguaf{
+	background: image-url("logos-clientes.png") -240px -4px no-repeat;
+	width: 120px;
+	height: 96px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .lootcrate{
+	background: image-url("logos-clientes.png") -1320px -41px no-repeat;
+	width: 120px;
+	height: 37px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .littlebits{
+	background: image-url("logos-clientes.png") -1200px -33px no-repeat;
+	width: 120px;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .ezekiel{
+	background: image-url("logos-clientes.png") -360px -34px no-repeat;
+	width: 120px;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+.our-clients .row .col-md-3 .flyerio{
+	background: image-url("logos-clientes.png") -480px -24px no-repeat;
+	width: 120px;
+	height: 50px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+
+
+/*------------------------------------------------------*/
+.footer-home .pie{
+	background-image: image-url("footer_grap.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height: 440px;
+	background-color:#007466;
+	display: block;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+
+.footer-home .pie h3{
+	display: block;
+	font-weight: 300;
+	margin-bottom: 3.7em;
+	margin-top: 0;
+	padding-top:60px;
 	text-align: center;
 	font-size: 2.25em;
 	line-height: 1em;
+	color: #ffffff;
 	font-family: "Roboto", sans-serif;
-	color: #505051;
 }
 
 
-
-.our-clients .row .col-md-3 .l-wrapper clients .client .gopro{
-	background-color:black;
-}
-
-
-.l-wrapper {
-	margin: 0 auto;
-	width: 1024px;
+.navbar .container-fluid{
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
 	list-style: none;
-	padding: 0;
-	display: block;
-	cursor: pointer;
-	text-align: center;
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	line-height: 1.3em;
-}
-
-.client{
+	line-height: 20px;
 	display: inline-block;
-	width: 120px;
-	height: 60px;
+	position: absolute;
+	left: 500px;
+	top: 10px;
+}
+
+.navbar .container-fluid li{
+	display:inline;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	position: center;
+}
+
+.navbar .container-fluid .iconos-sociales li{
+	background-image: image-url("sociales.png");
+	display:inline;
+	text-align: center;
+	font-size: 16px;
+	position: center;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height: 440px;
+}
+
+
+.footer-home .pie p{
+	padding-top: 50px;
+	text-align: center;
+	position: center;
+	color: white;
+	margin: 0;
+	font-size: 16px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
-	line-height: 1.3em;
-}
-
-.our-clients .gopro{
-	width: 120px;
-	height: 37px;
-	background-image: image-url("logos-clientes.png");
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	line-height: 1.3em;
-}
-
-/*------------------------------------------------------*/
-.footer-home{
-background-image: image-url("footer_grap.png");
-background-position: center bottom;
-background-repeat: no-repeat;
-color: #ffffff;
-height: 440px;
-background-color:#007466;
-display: block;
-font-family: "Roboto", sans-serif;
-font-weight: 300;
-line-height: 1.3em;
-}
-
-.l-wrapper footer-body{
-height: 374px;
-padding-top: 4.125em;
-margin: 0 auto;
-width: 1024px;
-display: block;
-color: #ffffff;
-font-family: "Roboto", sans-serif;
-font-weight: 300;
-line-height: 1.3em;
-}
-
-.l-wrapper footer-body h3{
-display: block;
-font-weight: 300;
-margin-bottom: 3.7em;
-margin-top: 0;
-text-align: center;
-font-size: 2.25em;
-line-height: 1em;
-color: #ffffff;
-font-family: "Roboto", sans-serif;
+	line-height: 16px;
 }
