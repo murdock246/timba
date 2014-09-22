@@ -328,6 +328,7 @@ line-height: 1.3em;
 	font-weight: 300;
 	line-height: 1.3em;
 	color: #505051;
+	list-style: none;
 }
 
 .our-clients-title{
@@ -340,7 +341,9 @@ line-height: 1.3em;
 	display: block;
 	font-family: "Roboto", sans-serif;
 	color: #505051;
+	list-style: none;
 }
+
 
 .our-clients .row .col-md-3 .gopro{
 	background: image-url("logos-clientes.png") -720px -31px no-repeat;
@@ -527,4 +530,26 @@ line-height: 1.3em;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	line-height: 16px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*About-us*/
+
+.jumbotron{
+	background: image-url("about.png");
+	background-repeat: no reapeat;
+	background-color: yellow;	
+}
+
+.jumbotron h2{
+	text-align: center;
+	font-size: 64px;
+	font_weight: bold;
+}
+
+.jumbotron p{
+	text-align: center;
+	font-size: 64px;
+	font_weight: bold;
 }
