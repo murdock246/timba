@@ -12,6 +12,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
+	cursor: none;
 	background: image-url("crowdint-logo.png") 0 0 no-repeat;	
 }
 
@@ -27,7 +28,7 @@ body {
 	top: 10px;
 }
 
-.header-button {
+.container .navbar-nav .nav-item .header-button {
 	transition: all 0.5s ease;
 	font-family: "Roboto", sans-serif;
 	background: #007466;
@@ -36,6 +37,11 @@ body {
 	display: inline-block;
 	cursor: pointer;
 	opacity: 0.8;
+	color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 /*------------------------------------------------------*/
 .headline-home {
@@ -533,23 +539,3 @@ line-height: 1.3em;
 }
 
 
-/*-----------------------------------------------------------------------------------*/
-/*About-us*/
-
-.jumbotron{
-	background: image-url("about.png");
-	background-repeat: no reapeat;
-	background-color: yellow;	
-}
-
-.jumbotron h2{
-	text-align: center;
-	font-size: 64px;
-	font_weight: bold;
-}
-
-.jumbotron p{
-	text-align: center;
-	font-size: 64px;
-	font_weight: bold;
-}
