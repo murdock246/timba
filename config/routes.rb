@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'welcome', to: 'welcome#page'
+  get 'welcome', to: 'pages#home'
   get 'about', to: 'welcome#about_us'
   get 'whatwedo', to: 'welcome#we_do'
   get 'portafolio', to: 'welcome#porfolio'
@@ -9,5 +9,5 @@ Rails.application.routes.draw do
 
 
   # You can have the root of your site routed with "root"
-   root 'welcome#index'
+   root 'pages#home'
 end
