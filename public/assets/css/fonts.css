@@ -16,7 +16,7 @@ blockquote p, .section-header p {
 }
 /*Encabezado Timba*/
 .hairline {
-  font-weight: 100 !important;
+  font-weight: 500 !important;
 }
 .hairline strong {
   font-weight: 300;
