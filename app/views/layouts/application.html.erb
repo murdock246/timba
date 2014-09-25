@@ -5,15 +5,39 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
-  <body class="layout-boxed" style="background-image: url(image_url)">
 
-  
+  <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicono.ico" />
+  <link rel="icon" type="image/png" href="assets/images/favicons/favicono.png" />
+  <!-- For iPhone 4 Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+  <!-- For iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+  <!-- For iPhone: -->
+  <link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-60x60-precomposed.png">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- Angle styles -->
+  <link rel="stylesheet" href="assets/css/theme.min.css">
+  <link rel="stylesheet" href="assets/css/color-defaults.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-beige-black.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-black-beige.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-black-white.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-black-yellow.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-blue-white.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-green-white.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-red-white.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-white-black.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-white-blue.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-white-green.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-white-red.min.css">
+  <link rel="stylesheet" href="assets/css/swatch-yellow-black.min.css">
+  <link rel="stylesheet" href="assets/css/fonts.min.css" media="screen">
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render "header" %>
+  <%= yield %>
+  <%= render "footer" %>
+  
 </body>
 </html>
