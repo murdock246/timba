@@ -1,3 +1,4 @@
+/*--letras de la pag--*/
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -13,7 +14,7 @@ blockquote p, .section-header p {
 .light {
   font-weight: 300 !important;
 }
-
+/*Encabezado Timba*/
 .hairline {
   font-weight: 100 !important;
 }
