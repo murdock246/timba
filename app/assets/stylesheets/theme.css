@@ -5543,14 +5543,14 @@ pre {
 }
 
 .flat-shadow .hex-right:after {
-  background-image: url(../images/shadow-right.png);
+  background-image: image-url("shadow-right.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 130%;
 }
 
 .flat-shadow .hex-left:after {
-  background-image: url(../images/shadow-left.png);
+  background-image: url("shadow-left.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 130%;
@@ -7596,13 +7596,13 @@ html[xmlns] .slides {
   margin-right: 11%;
 }
 .portfolio-shadows .hex-right:after {
-  background-image: url(../images/shadow-right.png);
+  background-image: image-url("shadow-right.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 130%;
 }
 .portfolio-shadows .hex-left:after {
-  background-image: url(../images/shadow-left.png);
+  background-image: imgae-url("shadow-left.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 130%;
