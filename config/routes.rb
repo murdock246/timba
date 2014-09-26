@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   
-  get 'welcome', to: 'pages#home'
-  
+  get 'home', to: 'pages#home'
+  get 'portfolio', to: 'pages#portfolio'
+  get 'blog', to: 'pages#blog'
+  get 'contact', to: 'pages#contact'
+
 
   # You can have the root of your site routed with "root"
    root 'pages#home'

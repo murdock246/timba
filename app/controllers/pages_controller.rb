@@ -1,4 +1,14 @@
 class PagesController < ApplicationController
 	def home
-  end
+  	end
+
+  	def contact
+  	end
+
+  	def blog
+  	end
+
+  	def portfolio
+  	end
+  	
 end
