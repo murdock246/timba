@@ -4,15 +4,16 @@ window.map = {
     mapStyle: 'flat',
     mapScroll: false,
     marker: 'show',
-    lat: '51.5171',
-    lng: '0.1062',
-    markerURL: 'assets/images/marker.png'
+    lat: '6.1775',
+    lng: '-75.5854',
+    markerURL: 'assets/marker.png'
+
 };
 /* ========================================================================
  * Angle: map.js
  * Map Shortcode Javascript file
  * ========================================================================
- * Copyright 2014 Oxygenna LTD
+ * Copyright 2014 Timba
  * ======================================================================== */
 
 // ignore camel case because it breaks jshint for vars from php localisation
