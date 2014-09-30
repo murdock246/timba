@@ -6,7 +6,7 @@ class ContactUsMailer < ActionMailer::Base
   	@name = name
   	@message = message
 
-  	mail(to: 'david@timba.co', from: from, subject: 'Inquery from #{name}')
+  	mail(from: from, subject: 'Inquery from #{name}')
 
   end
 end
