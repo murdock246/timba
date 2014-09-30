@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   	end
 
   	def contact
+  		
   	end
 
   	def blog
@@ -10,4 +11,16 @@ class PagesController < ApplicationController
 
   	def portfolio
   	end 	
+
+  	def send_contact_mail
+  		name = params[:name]
+  		mail = params[:email]
+  		message = [:message]
+  		
+
+
+  		UserMailer.welcome_email(@user).deliver
+
+
+  	end
 end
