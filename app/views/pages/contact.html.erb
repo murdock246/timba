@@ -8,7 +8,7 @@
             </header>
             <div class="row">
                 <div class="col-md-6">
-                    <form id="contactForm" class="contact-form">
+                    <%= form_tag("/contact", { class: "contact-form"}) do %>
                         <div class="form-group form-icon-group">
                             <input class="form-control" id="name" name="name" placeholder="Your name *" type="text" required/>
                             <i class="fa fa-user"></i>
@@ -29,7 +29,7 @@
                                 </div>
                             </button>
                         </div>
-                    </form>
+                    <% end %>
                     <div id="messages"></div>
                 </div>
                 <div class="col-md-6">

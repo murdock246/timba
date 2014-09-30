@@ -1,12 +1,10 @@
 class ContactUsMailer < ActionMailer::Base
   
   def contact_us_email(name, from, message)
-  	default to: 'david@timba.co'
-  	
   	@name = name
   	@message = message
 
-  	mail(from: from, subject: 'Inquery from #{name}')
+  	mail(to: 'ivan@timba.co', from: from, subject: "Inquiry from #{name}")
 
   end
 end

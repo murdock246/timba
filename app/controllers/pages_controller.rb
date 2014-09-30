@@ -15,12 +15,8 @@ class PagesController < ApplicationController
   	def send_contact_mail
   		name = params[:name]
   		mail = params[:email]
-  		message = [:message]
-  		
-
-
-  		UserMailer.welcome_email(@user).deliver
-
-
-  	end
+  		message = params[:message]
+  		ContactUsMailer.contact_us_email(name, mail, message).deliver
+      redirect_to :home
+    end
 end
