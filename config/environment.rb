@@ -10,6 +10,6 @@ Rails.application.initialize!
   :authentication => :plain,
   :user_name      => ENV['app29693721@heroku.com'],
   :password       => ENV['mz4tqgds'],
-  :domain         => 'timba.co',
+  :domain         => 'heroku.com',
   :enable_starttls_auto => true
 }
