@@ -6,7 +6,6 @@ class PagesController < ApplicationController
   def open_source
   end
   
-
   def blog
   end
 
@@ -18,6 +17,13 @@ class PagesController < ApplicationController
 
   def thanks
   end
+
+  def web_design
+  end
+
+  def game_development
+  end
+  
 
 	def send_contact_mail
 		name = params[:name]

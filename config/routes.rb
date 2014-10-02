@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   post 'contact', to: 'pages#send_contact_mail'
   get 'thanks', to: 'pages#thanks'
-  
+  get 'web_design', to: 'pages#web_design'
+  get 'game_development', to: 'pages#game_development'
 
 
   # You can have the root of your site routed with "root"
