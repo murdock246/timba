@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'thanks', to: 'pages#thanks'
   get 'web_design', to: 'pages#web_design'
   get 'game_development', to: 'pages#game_development'
+  get 'wd_project', to: 'pages#wd_project'
 
 
   # You can have the root of your site routed with "root"
