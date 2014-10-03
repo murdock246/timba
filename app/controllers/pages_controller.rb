@@ -23,7 +23,7 @@ class PagesController < ApplicationController
 
   def game_development
   end
-  
+ 
 
 	def send_contact_mail
 		name = params[:name]

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'game_development', to: 'pages#game_development'
   get 'wd_project', to: 'pages#wd_project'
   get 'pricing', to: 'pages#pricing'
+  get 'post', to: 'pages#blog'
 
 
   # You can have the root of your site routed with "root"
