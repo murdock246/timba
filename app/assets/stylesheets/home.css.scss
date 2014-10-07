@@ -8,7 +8,29 @@ h1.headline {
   font-weight: 400;
 }
 
-
 .btn-icon-right.alineado{
     padding-right: 32px;
+}
+
+.container .row .pricing-list li{
+	font-size:25px;
+}
+
+.container .row .overlay1 h4{
+	padding-top: 0px;	
+}
+
+.container .row .overlay2 h4{
+	font-size: 35px;
+	text-indent: 0px	
+}
+
+.container .row .title{
+	font-size: 35px;
+	text-align:center;
+}
+
+.container .row .description{
+	font-size: 25px;
+	text-align:center;
 }

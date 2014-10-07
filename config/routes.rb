@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'pages#portfolio'
   get 'open_source', to: 'pages#open_source'
   get 'blog', to: 'pages#blog'
-  get 'about_us', to: 'pages#about_us'
+ 
   get 'contact', to: 'pages#contact'
   post 'contact', to: 'pages#send_contact_mail'
   get 'thanks', to: 'pages#thanks'
