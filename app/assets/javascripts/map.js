@@ -6,7 +6,7 @@ window.map = {
     marker: 'show',
     lat: '6.1775',
     lng: '-75.5854',
-    markerURL: 'assets/marker.png'
+    markerURL: '/assets/marker.png'
 
 };
 /* ========================================================================

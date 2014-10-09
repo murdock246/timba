@@ -12,13 +12,20 @@ h1.headline {
     padding-right: 32px;
 }
 
-.container .row .pricing-list li{
+.container.prices .text-center h1.hairline{
+	font-size:45px;
+}
+
+.container.prices .row .pricing-list li{
 	font-size:16px;
 	font-weight: 400;
 }
 
-.container .row .description{
+.container.prices .row .description{
 	font-size: 25px;
 	text-align:center;
 }
 
+.container.map .underline h1.hairline{
+	font-size: 80px;
+}
