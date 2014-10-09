@@ -3,8 +3,13 @@ body {
   font-family: 'Lato', sans-serif !important;
   font-weight: 400;
 }
+
 body input, body textarea, body .btn, body button {
   font-family: 'Lato', sans-serif;
+}
+
+body .btn {
+  font-family: 'Press Start 2P', cursive;
 }
 
 blockquote p, .section-header p {
