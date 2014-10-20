@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'wd_project', to: 'pages#wd_project'
   get 'pricing', to: 'pages#pricing'
   get 'post', to: 'pages#blog'
+  get 'cvs', to: 'pages#cvs_page'
 
 
   # You can have the root of your site routed with "root"
