@@ -1,78 +1,107 @@
+/* Cuerpo */
 .cvs{
-	background:#40659c;	
+	background-image: image-url("design/section-bg/bg-grid.png");
+	background-attachment: fixed;
 }
 
+/* Cabecera */
+
 .container.cvs{
+	padding-left:0px;
+	padding-right:0px;
+	width:1000px;
 	-webkit-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
-	border-style: ridge;
-    border-width: 5px;
-    border-color: gray;	
-    background: white;
 }
 
-.container.cvs .row.header{	
-	position: relative;
-	background-color: #406eaa;
-	color: #fff;
-	padding: 25px 30px;
-}
-
-.container.cvs .row.header .logo .cabecera{
-	margin-left:-50px;
-}
-
-.container.cvs .row.header .col-md-3{
-	top:10px;
-}
-
-.container.cvs .row.header .col-md-4{
-	left:200px;
+.section.swatch-beige-black{
+	padding-top: 80px;
+	padding-bottom:30px;
 }
 
 .container.cvs .row .logo .img-rounded{
-	margin-top:20px;
 	width: 203px;
 	height: 203px;
 }
 
-.container.cvs .row .col-md-3.col-md-offset-2{
-	width: 220px;
-}
-
-.container.cvs .row .col-md-3.col-md-offset-2 .btn.btn-primary{
+.container.cvs .row .col-md-3.col-md-offset-1 .btn.btn-primary{
 	margin-top: 30px;
-	width: 191px;
+	width: 204px;
+	padding-top:15px;
+	padding-bottom:15px;
 }
 
-.row .col-md-6.info{
+.row .col-md-7.info{
 	padding-left: -20px;
 }
 
-.row .col-md-6.info li{
+.row .col-md-7.info .member_info{
+	font-size:16px;
+}
+
+.row .col-md-7.info li{
 	display: inline;
 }
 
-.container.cvs .row.footer .col-md-3{
+.row .col-md-7.info .btn.btn-default{
+	margin:3px;
+	font-size:10px;
+}
+
+.section.swatch-beige-black .linea{
+	margin-bottom: 0px;	
+}
+
+/* Portafolio y Experiencia */
+
+.row .col-md-3.col-md-offset-1.characters{
+	border-right-style: groove;
+	border-right-width: 1px;
+}
+
+/* Available */
+
+.row.segunda .col-md-3.col-md-offset-1.segunda{
+	border-right-style: groove;
+	border-right-width: 1px;
+}
+
+.row.segunda .col-md-3.segunda{
+	border-right-style: groove;
+	border-right-width: 1px;
+}
+
+/* Fin de pag */
+
+.row.footer {
+	padding-top: 40px;
+}
+
+.container.cvs .row.footer .col-md-4{
 	top:10px;
 }
 
-.container.foot{
-	border-style: ridge;
-    border-width: 5px;
-    border-color: gray;	
-    background: white;
+.container.cvs .row.footer .col-md-3{
+	margin-left:100px;
 }
+
+/* Pie */
 
 .container.foot{
 	-webkit-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
+	padding-left:0px;
+	padding-right:0px;
+	width:1000px;
+	margin-bottom:50px;
 }
 
-.container.foot p{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: 350px;
+.container.foot .section.swatch-beige-black{
+	padding-bottom:50px;
+}
+
+.container.foot .section.swatch-beige-black .btn.btn-primary.btn-lg{
+	margin-left:280px;
 }

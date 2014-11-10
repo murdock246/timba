@@ -1,0 +1,43 @@
+<section class="section swatch-black-beige adding">
+  <div class="container">
+    <h1 class="headline hyper hairline">Listing curriculums</h1>
+
+    <div class="add">
+      <u><%= link_to 'New Curriculum', new_curriculum_path %></u>
+    </div><br>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="prim">Name</th>
+          <th>Experience</th>
+          <th>Availability</th>
+          <th>Recent work experience</th>
+          <th>Skills</th>
+          <th>Education</th>
+          <th>Languages</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @curriculums.each do |curriculum| %>
+        <tr>
+          <td><%= curriculum.name %></td>
+          <td><%= curriculum.experience %></td>
+          <td><%= curriculum.availability %></td>
+          <td><%= curriculum.recent_work_experience %></td>
+          <td><%= curriculum.skills %></td>
+          <td><%= curriculum.education %></td>
+          <td><%= curriculum.languages %></td>
+          <p></p>
+          <td><%= link_to 'Show', curriculum %></td>
+          <td><%= link_to 'Edit', edit_curriculum_path(curriculum) %></td>
+          <td><%= link_to 'Destroy', curriculum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+</section>

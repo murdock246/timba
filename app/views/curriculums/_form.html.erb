@@ -1,0 +1,51 @@
+<%= form_for(@curriculum) do |f| %>
+  <% if @curriculum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@curriculum.errors.count, "error") %> prohibited this curriculum from being saved:</h2>
+
+      <ul>
+      <% @curriculum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field name">
+    <b><%= f.label :name %></b><br>
+    <%= f.text_field :name %>
+  </div><br>
+  <div class="field profile">
+    <b><%= f.label :profile %></b><br>
+    <%= f.text_area :profile %>
+  </div><br>
+  <div class="field">
+    <b><%= f.label :experience %>(years)</b><br>
+    <%= f.number_field :experience %>
+  </div><br>
+  <div class="field">
+    <b><%= f.label :availability %>(years)</b><br>
+    <%= f.number_field :availability %>
+  </div><br>
+  <div class="field experience">
+    <b><%= f.label :recent_work_experience %></b><br>
+    <%= f.text_area :recent_work_experience %>
+  </div><br>
+  <div class="field skills">
+    <b><%= f.label :skills %></b><br>
+    <%= f.text_area :skills %>
+  </div><br>
+  <div class="field education">
+    <b><%= f.label :education %></b><br>
+    <%= f.text_area :education %>
+  </div><br>
+  <div class="field languages">
+   <b><%= f.label :languages %></b><br>
+    <%= f.text_area :languages %>
+  </div><br>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

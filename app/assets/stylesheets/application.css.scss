@@ -10,8 +10,26 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ 
  *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+/* Angle's Styles */
+
+@import "color-defaults";
+@import "fonts";
+@import "revolution";
+@import "swatch-black-white";
+@import "swatch-white-black";
+@import "swatch-black-beige";
+@import "swatch-beige-black";
+@import "theme";
+
+/* App Styles  */
+
+@import "home";
+@import "cvs";
+@import "add_cvs";

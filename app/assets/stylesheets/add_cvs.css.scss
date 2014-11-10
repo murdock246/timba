@@ -1,0 +1,59 @@
+// Place all the styles related to the add_cvs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Add cvs*/
+
+.section.swatch-black-beige.adding .container .headline.hyper.hairline{
+	font-size:60px;
+	text-align:center;
+}
+
+.section.swatch-black-beige.adding .table.table-striped th.prim{
+	width:146px;	
+}
+
+.section.swatch-black-beige.adding .table.table-striped th{
+	text-align: center;	
+}
+
+.section.swatch-black-beige.adding .table.table-striped td{
+	text-align: center;	
+}
+
+.section.swatch-black-beige.adding .add{
+	font-size:18px;
+}
+
+/* _form */
+
+.field.name input{
+	width:304px;
+}
+
+.field.profile textarea{
+	width:506px;
+	height:76px;
+}
+
+.field.experience textarea{
+	width:506px;
+	height:76px;
+}
+
+.field.skills textarea{
+	width:306px;
+	height:76px;
+}
+
+.field.education textarea{
+	width:304px;
+}
+
+
+
+/* Editing cvs*/
+
+.section.swatch-black-beige.editing .container .headline.hyper.hairline{
+	font-size: 60px;
+}

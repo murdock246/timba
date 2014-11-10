@@ -1,0 +1,41 @@
+<section class="section swatch-black-beige adding">
+  <div class="container">
+    <h1 class="headline hyper hairline">CVS List</h1>
+
+    <div class="add">
+      <u><%= link_to 'New Add cv', new_cv_path %></u>
+    </div><br>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="prim">Full Name</th>
+          <th>Experience</th>
+          <th>Recent work experience</th>
+          <th>Skills</th>
+          <th>Education</th>
+          <th>Languages</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @cvs.each do |cv| %>
+        <tr>
+          <td><%= cv.full_name %></td>
+          <td><%= cv.experience %></td>
+          <td><%= cv.recent_work_experience %></td>
+          <td><%= cv.skills %></td>
+          <td><%= cv.education %></td>
+          <td><%= cv.languages %></td>
+          <p></p>
+          <td><%= link_to 'Show', cv %></td>
+          <td><%= link_to 'Edit', edit_cv_path(cv) %></td>
+          <td><%= link_to 'Destroy', cv, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+</section>

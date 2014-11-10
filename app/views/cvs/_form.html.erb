@@ -1,0 +1,45 @@
+<%= form_for(@cv) do |f| %>
+  <% if @cv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cv.errors.count, "error") %> prohibited this cv from being saved:</h2>
+
+      <ul>
+      <% @cv.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field name">
+    <b><%= f.label :full_name %></b><br>
+    <%= f.text_field :full_name %>
+  </div><br>
+  <div class="field profile">
+    <b><%= f.label :profile %></b><br>
+    <%= f.text_area :profile %>
+  </div><br>
+  <div class="field">
+    <b><%= f.label :experience %>(years)</b><br>
+    <%= f.number_field :experience %>
+  </div><br>
+  <div class="field experience">
+    <b><%= f.label :recent_work_experience %></b><br>
+    <%= f.text_area :recent_work_experience %>
+  </div><br>
+  <div class="field skills">
+    <b><%= f.label :skills %></b><br>
+    <%= f.text_area :skills %>
+  </div><br>
+  <div class="field education">
+    <b><%= f.label :education %></b><br>
+    <%= f.text_area :education %>
+  </div><br>
+  <div class="field">
+   <b><%= f.label :languages %></b><br>
+    <%= f.text_field :languages %>
+  </div><br>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

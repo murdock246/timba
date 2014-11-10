@@ -1,0 +1,43 @@
+<section class="section swatch-black-beige">
+  <div class="container">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Full name:</strong><br>
+      <%= @cv.full_name %>
+    </p>
+
+    <p>
+      <strong>Profile:</strong><br>
+      <%= @cv.profile %>
+    </p>
+
+    <p>
+      <strong>Experience:</strong><br>
+      <%= @cv.experience %>
+    </p>
+
+    <p>
+      <strong>Recent work experience:</strong><br>
+      <%= @cv.recent_work_experience %>
+    </p>
+
+    <p>
+      <strong>Skills:</strong><br>
+      <%= @cv.skills %>
+    </p>
+
+    <p>
+      <strong>Education:</strong><br>
+      <%= @cv.education %>
+    </p>
+
+    <p>
+      <strong>Languages:</strong><br>
+      <%= @cv.languages %>
+    </p>
+
+    <%= link_to 'Edit', edit_cv_path(@cv) %> |
+    <%= link_to 'Back', cvs_path %>
+  </div>
+</section>
