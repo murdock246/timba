@@ -1,6 +1,6 @@
 class Curriculum
-	LANGUAGES = %w(English Spanish Italian French Chinese Ducth)
   include Mongoid::Document
+
   store_in database: "timba_development"
 
   field :name, type: String
@@ -14,13 +14,13 @@ class Curriculum
 
   field :availability, type: String
 
-  field :recent_work_experience, type: String
+  field :recent_work_experience, type: Array, default: []
 
-  field :skills, type: String
+  field :skills, type: Array, default: []
 
-  field :education, type: String
+  field :education, type: Array, default: []
   
-  field :languages, :type => String
+  field :languages, type: Array, default: []
   
   #field :languages, type: String
 end

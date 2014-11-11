@@ -24,7 +24,13 @@ class CurriculumsController < ApplicationController
   # POST /curriculums
   # POST /curriculums.json
   def create
-    @curriculum = Curriculum.new(curriculum_params)
+    updateInfo = curriculum_params
+    updateInfo[:recent_work_experience] = params[:curriculum][:recent_work_experience].split(',')
+    updateInfo[:skills] = params[:curriculum][:skills].split(',')
+    updateInfo[:education] = params[:curriculum][:education].split(',')
+    updateInfo[:languages] = params[:curriculum][:languages].split(',')
+    @curriculum = Curriculum.new(updateInfo)
+
     respond_to do |format|
       if @curriculum.save
         format.html { redirect_to @curriculum, notice: 'Curriculum was successfully created.' }
@@ -40,9 +46,10 @@ class CurriculumsController < ApplicationController
   # PATCH/PUT /curriculums/1
   # PATCH/PUT /curriculums/1.json
   def update
-     @curriculum[:languages] = params[:curriculum][:languages].split(',')
+    updateInfo = curriculum_params
+    updateInfo[:languages] = params[:curriculum][:languages].split(',')
     respond_to do |format|
-      if @curriculum.update(curriculum_params)
+      if @curriculum.update(updateInfo)
         format.html { redirect_to @curriculum, notice: 'Curriculum was successfully updated.' }
         format.json { render :show, status: :ok, location: @curriculum }
       else
