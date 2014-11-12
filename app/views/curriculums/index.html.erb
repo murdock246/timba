@@ -10,9 +10,9 @@
       <thead>
         <tr>
           <th class="prim">Name</th>
+          <th>Country</th>
           <th>Experience</th>
           <th>Availability</th>
-          <th>Recent work experience</th>
           <th>Skills</th>
           <th>Education</th>
           <th>Languages</th>
@@ -23,13 +23,13 @@
       <tbody>
         <% @curriculums.each do |curriculum| %>
         <tr>
-          <td><%= curriculum.name %></td>
+          <td><%= curriculum.first_name %>&nbsp;<%= curriculum.last_name %></td>
+          <td><%= curriculum.country %></td>
           <td><%= curriculum.experience %></td>
           <td><%= curriculum.availability %></td>
-          <td><%= curriculum.recent_work_experience %></td>
-          <td><%= curriculum.skills %></td>
-          <td><%= curriculum.education %></td>
-          <td><%= curriculum.languages %></td>
+          <td><%= curriculum.skills_list %></td>
+          <td><%= curriculum.education_list %></td>
+          <td><%= curriculum.languages_list %></td>
           <p></p>
           <td><%= link_to 'Show', curriculum %></td>
           <td><%= link_to 'Edit', edit_curriculum_path(curriculum) %></td>

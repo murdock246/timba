@@ -24,12 +24,7 @@ class CurriculumsController < ApplicationController
   # POST /curriculums
   # POST /curriculums.json
   def create
-    updateInfo = curriculum_params
-    updateInfo[:recent_work_experience] = params[:curriculum][:recent_work_experience].split(',')
-    updateInfo[:skills] = params[:curriculum][:skills].split(',')
-    updateInfo[:education] = params[:curriculum][:education].split(',')
-    updateInfo[:languages] = params[:curriculum][:languages].split(',')
-    @curriculum = Curriculum.new(updateInfo)
+    @curriculum = Curriculum.new(curriculum_params)
 
     respond_to do |format|
       if @curriculum.save
@@ -46,10 +41,8 @@ class CurriculumsController < ApplicationController
   # PATCH/PUT /curriculums/1
   # PATCH/PUT /curriculums/1.json
   def update
-    updateInfo = curriculum_params
-    updateInfo[:languages] = params[:curriculum][:languages].split(',')
     respond_to do |format|
-      if @curriculum.update(updateInfo)
+      if @curriculum.update(curriculum_params)
         format.html { redirect_to @curriculum, notice: 'Curriculum was successfully updated.' }
         format.json { render :show, status: :ok, location: @curriculum }
       else
@@ -77,6 +70,6 @@ class CurriculumsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def curriculum_params
-      params.require(:curriculum).permit(:name, :profile, :experience, :availability, :recent_work_experience, :skills, :education, :languages)
+      params.require(:curriculum).permit(:first_name, :last_name, :country, :profile, :experience, :availability, :preferred_environment, :recent_work_experience_list, :skills_list, :education_list, :languages_list)
     end
 end

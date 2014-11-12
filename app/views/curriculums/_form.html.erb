@@ -1,3 +1,4 @@
+<div class="container">
 <%= form_for(@curriculum) do |f| %>
   <% if @curriculum.errors.any? %>
     <div id="error_explanation">
@@ -12,8 +13,16 @@
   <% end %>
 
   <div class="field name">
-    <b><%= f.label :name %></b><br>
-    <%= f.text_field :name %>
+    <b><%= f.label :first_name %></b><br>
+    <%= f.text_field :first_name %>
+  </div><br>
+    <div class="field name">
+    <b><%= f.label :last_name %></b><br>
+    <%= f.text_field :last_name %>
+  </div><br>
+  <div class="field">
+    <b><%= f.label :country %></b><br>
+    <%= f.text_field :country %>
   </div><br>
   <div class="field profile">
     <b><%= f.label :profile %></b><br>
@@ -24,28 +33,32 @@
     <%= f.number_field :experience %>
   </div><br>
   <div class="field">
-    <b><%= f.label :availability %>(years)</b><br>
-    <%= f.number_field :availability %>
+    <b><%= f.label :availability %></b><br>
+    <%= f.text_field :availability %> ( Full time, Part time)
+  </div><br>
+  <div class="field">
+    <b><%= f.label :preferred_environment %></b><br>
+    <%= f.text_field :preferred_environment %> ( Win, Mac OS, linux)
   </div><br>
   <div class="field experience">
     <b><%= f.label :recent_work_experience %></b><br>
-    <%= f.text_area :recent_work_experience %>
+    <%= f.text_area :recent_work_experience_list %>
   </div><br>
   <div class="field skills">
     <b><%= f.label :skills %></b><br>
-    <%= f.text_area :skills %>
+    <%= f.text_area :skills_list %>
   </div><br>
   <div class="field education">
     <b><%= f.label :education %></b><br>
-    <%= f.text_area :education %>
+    <%= f.text_area :education_list %>
   </div><br>
   <div class="field languages">
    <b><%= f.label :languages %></b><br>
-    <%= f.text_field :languages %>
+    <%= f.text_field :languages_list %>
   </div><br>
   
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
-
+</div>
