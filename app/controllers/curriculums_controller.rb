@@ -15,6 +15,12 @@ class CurriculumsController < ApplicationController
   # GET /curriculums/new
   def new
     @curriculum = Curriculum.new
+    @curriculum.languages << Language.new 
+    @curriculum.languages << Language.new
+    @curriculum.educations << Education.new
+    @curriculum.educations << Education.new
+    @curriculum.work_experiences << WorkExperience.new
+    @curriculum.work_experiences << WorkExperience.new
   end
 
   # GET /curriculums/1/edit
@@ -70,6 +76,9 @@ class CurriculumsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def curriculum_params
-      params.require(:curriculum).permit(:first_name, :last_name, :country, :profile, :experience, :availability, :preferred_environment, :recent_work_experience_list, :skills_list, :education_list, :languages_list)
+      params.require(:curriculum).permit(:first_name, :last_name, :country, :profile, 
+        :experience, :availability, :preferred_environment, :skills_list,
+        languages_attributes: [:id, :name, :proeficiency], educations_attributes: [:id,
+         :institution, :carreer], work_experiences_attributes: [:id, :company, :job, :time])
     end
 end

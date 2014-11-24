@@ -14,7 +14,6 @@
           <th>Experience</th>
           <th>Availability</th>
           <th>Skills</th>
-          <th>Education</th>
           <th>Languages</th>
           <th colspan="3"></th>
         </tr>
@@ -28,8 +27,12 @@
           <td><%= curriculum.experience %></td>
           <td><%= curriculum.availability %></td>
           <td><%= curriculum.skills_list %></td>
-          <td><%= curriculum.education_list %></td>
-          <td><%= curriculum.languages_list %></td>
+          <td><% curriculum.languages.each do |language|%>
+                <%= language.name %>&nbsp;
+                <%= language.proeficiency %><br>
+             <% end %>
+          </td>
+          
           <p></p>
           <td><%= link_to 'Show', curriculum %></td>
           <td><%= link_to 'Edit', edit_curriculum_path(curriculum) %></td>

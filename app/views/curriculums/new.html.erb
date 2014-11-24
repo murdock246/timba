@@ -1,10 +1,12 @@
-<section class="section swatch-black-beige">
+<section class="section swatch-black-beige new">
 	<div class="container">
 		<h1>New curriculum</h1>
 
 		<%= render 'form' %>
-
-		<%= link_to 'Back', curriculums_path %>
-		<br><br><br><br><br><br>
+		<br>
+		<div class="bot">
+			<button type="button" class="btn btn-default"><%= link_to 'Back', curriculums_path %></button>
+		</div>
+		<br><br><br><br>
 	</div>
 </section>

@@ -25,7 +25,93 @@
 	font-size:18px;
 }
 
+/* New */
+
+.section.swatch-black-beige.new{
+	background-image: image-url("design/section-bg/bg-grid.png");
+	background-attachment: fixed;
+}
+
+
+
+
+
 /* _form */
+
+.section.swatch-black-beige.editing{
+	background-image: image-url("design/section-bg/bg-grid.png");
+	background-attachment: fixed;
+}
+
+.section.swatch-black-beige.editing .container .botones{
+	text-align:center;	
+}
+
+.section.swatch-black-beige.editing .container .btn.btn-default{
+	background-color:#34383b !important;
+}
+
+.section.swatch-beige-black.new{
+	padding-left:0px;
+	padding-right:0px;
+	width:1000px;
+	-webkit-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.5);
+	margin-left:auto;
+	margin-right:auto;
+}
+
+section.swatch-beige-black.new .row .col-md-7 .field.employees input{
+	width:304px;
+}
+
+section.swatch-beige-black.new .row .col-md-4 .field.job input{
+	width:274px;
+}
+
+section.swatch-beige-black.new .row .col-md-3 .field.time input{
+	width:100px;
+}
+
+section.swatch-beige-black.new .row.segunda .col-md-4 .field.languages.name input{
+	width:150px;
+}
+
+section.swatch-beige-black.new .row.segunda .col-md-2 .field.languages.proeficiency input{
+	width:84px;
+}
+
+section.swatch-beige-black.new .row.xtra .col-md-7 .subtitulos .field.education input{
+	width:304px;
+}
+
+.section.swatch-black-beige.new .bot{
+	text-align:center;
+}
+
+.section.swatch-black-beige.new .bot .btn.btn-default{
+	background-color:#34383b !important;
+}
+
+.section.swatch-beige-black.new .new_curriculum .btn.btn-default{
+	background-color:#34383b !important;
+}
+
+.section.swatch-beige-black.new .edit_curriculum{
+	padding-bottom:50px;
+}
+
+.section.swatch-beige-black.new .actions{
+	text-align:center;
+}
+
+.section.swatch-beige-black.new .row .col-md-3.col-md-offset-1 .logo .img-rounded{
+	margin-top:60px;
+	width:203px;
+}
+
+
 
 .field.name input{
 	width:304px;

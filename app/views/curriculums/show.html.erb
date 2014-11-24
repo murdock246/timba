@@ -6,7 +6,7 @@
         <div class="col-md-3 col-md-offset-1">
           <a class="logo" href="/home">
             <img class="img-rounded" src="<%=image_path("design/people/user.png")%>" alt="a clock">
-          </a>
+          </a> 
           <p><a href="/home" type="button" class="btn btn-primary">Hire&nbsp;<%= @curriculum.first_name %></a></p>
         </div>
 
@@ -76,11 +76,9 @@
         </div>
         <div class="col-md-3">
           <div class="titulo"><strong>LANGUAGES:</strong></div>
-            <ul>
-              <% @curriculum.languages.each do |a| %>
-                <li><%= a %></li>
-              <% end %>
-            </ul>
+              <% @curriculum.languages.each do |language|%>
+                <%= language.name %>&nbsp;  <%= language.proeficiency %><br>
+             <% end %>
         </div>
       </div>
 
@@ -88,18 +86,39 @@
         <hr class="linea" align="center" width="90%"><br>
         <div class="col-md-2 col-md-offset-1">
           <div class="titulo"><strong>EMPLOYMENT:</strong></div>
-        </div>
-        <div class="col-md-8">
-          <ul class="subtitulos">
+          <div class="col-md-3">
             <ul class="subtitulos">
-              <% @curriculum.recent_work_experience.each do |a| %>
-                <li><%= a %></li>
-            <% end %>
+              <ul class="subtitulos">
+                <% @curriculum.work_experiences.each do |work_experience|%>
+                  <strong><u><%= work_experience.company %></u></strong><br>
+                <% end %>
+              </ul>
             </ul>
-          </ul>
+          </div>
         </div>
-      </div>
-
+          <div class="col-md-3">
+            <ul class="subtitulos">
+              <ul class="subtitulos">
+              <br>
+                <% @curriculum.work_experiences.each do |work_experience|%>
+                  <%= work_experience.job %><br>
+                <% end %>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="subtitulos">
+              <ul class="subtitulos">
+              <br>
+                <% @curriculum.work_experiences.each do |work_experience|%>
+                  <%= work_experience.time %>(years)<br>
+                <% end %>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      
+        
       <div class="row">
         <hr class="linea" align="center" width="90%"><br>
         <div class="col-md-2 col-md-offset-1">
@@ -107,13 +126,11 @@
         </div>
         <div class="col-md-7">
           <ul class="subtitulos">
-
             <ul class="subtitulos">
               <% @curriculum.skills.each do |a| %>
                 <li><%= a %></li>
               <% end %>
             </ul>
-
           </ul>
         </div>
       </div>
@@ -123,16 +140,33 @@
         <div class="col-md-2 col-md-offset-1">
           <div class="titulo"><strong>EDUCATION:</strong></div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-4">
           <ul class="subtitulos">
             <ul class="subtitulos">
-              <% @curriculum.education.each do |a| %>
-                <li><%= a %></li>
-            <% end %>
+              <% @curriculum.educations.each do |education|%>
+                <strong><%= education.institution %></strong><br>
+                <p></p>
+             <% end %>
+            </ul>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="subtitulos">
+            <ul class="subtitulos">
+              <% @curriculum.educations.each do |education|%>
+                <%= education.carreer %><br>
+                <p></p>
+             <% end %>
             </ul>
           </ul>
         </div>
       </div><br><br>
+      <br>
+
+      <div class="container final">
+        <%= link_to 'Edit', edit_curriculum_path(@curriculum) %> |
+        <%= link_to 'Back', curriculums_path %>
+      </div>
 
       <div class="row footer">
         <div class="col-md-2 col-md-offset-1">
@@ -140,6 +174,7 @@
             <img class="cabecera" src="<%=image_path("small_timba.png")%>" alt="a clock">
           </a>
         </div>
+
         <div class="col-md-4">Exclusive access to top developers</div>
         <div class="col-md-3">Timba.co<br>Call us: 888.604.3188</div>
       </div>
@@ -152,10 +187,6 @@
       <p>
         <a href="/curriculums" type="button" class="btn btn-primary btn-lg">To view more profiles</a>
       </p>
-      <div class="container final">
-        <%= link_to 'Edit', edit_curriculum_path(@curriculum) %> |
-        <%= link_to 'Back', curriculums_path %>
-      </div>
     </section>
   </div>
   <br><br>

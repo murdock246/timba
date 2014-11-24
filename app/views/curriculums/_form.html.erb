@@ -1,64 +1,165 @@
-<div class="container">
-<%= form_for(@curriculum) do |f| %>
-  <% if @curriculum.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@curriculum.errors.count, "error") %> prohibited this curriculum from being saved:</h2>
+<section class="section swatch-beige-black new">
+  <%= form_for(@curriculum) do |f| %>
+    <% if @curriculum.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@curriculum.errors.count, "error") %> prohibited this curriculum from being saved:</h2>
 
-      <ul>
-      <% @curriculum.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+          <% @curriculum.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <a class="logo" href="/home">
+          <br>
+          <img class="img-rounded" src="<%=image_path("design/people/user.png")%>" alt="a clock">
+        </a>
+      </div>
+
+      <div class="col-md-7 info"><br>
+        <div class="field name"><%= f.label :first_name %><br><%= f.text_field :first_name %></div><p></p>
+        <div class="field name"><%= f.label :last_name %><br><%= f.text_field :last_name %></div><p></p>
+
+        <div class="country"><div class="field"><b><%= f.label :country %></b><br><%= f.text_field :country %></div></div><p></p>
+        <div class="member_info"><div class="field profile"><b><%= f.label :profile %></b><br><%= f.text_area :profile %></div><br></div>
+        <ul class="detalles">     
+          <li><a class="btn btn-default" href="home" role="button">Objetive C</a></li>
+          <li><a class="btn btn-default" href="home" role="button">IOS</a></li>
+          <li><a class="btn btn-default" href="home" role="button">SQL</a></li>
+          <li><a class="btn btn-default" href="home" role="button">C++</a></li>
+          <li><a class="btn btn-default" href="home" role="button">Java</a></li>
+          <li><a class="btn btn-default" href="home" role="button">Cocoa Touch</a></li>
+          <li><a class="btn btn-default" href="home" role="button">Aplle Xcode</a></li>
+          <li><a class="btn btn-default" href="home" role="button">HTML5</a></li>
+          <li><a class="btn btn-default" href="home" role="button">Show More</a></li>
+        </ul>
+      </div>  
+    </div><br>
+
+    <hr class="linea" align="center" width="90%">
+
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1 characters"><br>
+        <div class="titulo"><strong>PORTFOLIO:</strong></div>
+        <ul>
+          <li><a href="home"><b>Life360 (via toptal)</b></a>
+            <p>iOS</p>
+          </li>
+          <li><a href="home"><b>Software Factory LLC</b></a>
+            <p>iOS, Objective-C, CocoaTouch, Xcode</p>
+          </li>
+          <li><a href="home"><b>IntegraSoft</b></a>
+            <p>.NET, SQL, Oracle, HTML, CSS, ASP.NET</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3"><br>
+        <div class="titulo"><strong>EXPERIENCE:<b>(years)</b></strong></div>
+        <ul>
+          <div class="field"><br><%= f.number_field :experience %></div><br>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <a class="logo" href="/home">
+          <img class="svg-inject" src="<%=image_path("design/vector/img-1-600x518.png")%>" alt="a clock">
+        </a>
+      </div><br>
+      <hr class="linea" align="center" width="90%">
+    </div><br>
+
+    <div class="row segunda">
+      <div class="col-md-3 col-md-offset-1 segunda">
+        <div class="titulo"><strong>AVAILABILITY:</strong></div>
+        <div class="field"><br><%= f.text_field :availability %><br>( Full time, Part time)</div><br>
+        <br>
+      </div>
+      <div class="col-md-3 segunda">
+        <div class="titulo"><strong>PREFERRED ENVIRONMENT:</strong></div>
+        <div class="field"><br><%= f.text_field :preferred_environment %><br>( Windows, Mac OS, linux)</div><br>
+        <br>
+      </div>
+      <div class="col-md-4">
+        <div class="titulo"><strong>LANGUAGES:</strong></div>
+      </div>
+      <div class="col-md-4">
+        <div class="field languages name">
+          <%= f.fields_for :languages  do |l| %>
+            <%= l.label :name %><br><%= l.text_field :name %><p></p>
+            <%= l.label :proeficiency %><br><%= l.number_field :proeficiency %><p></p>
+            <br>
+          <% end %>
+        </div>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field name">
-    <b><%= f.label :first_name %></b><br>
-    <%= f.text_field :first_name %>
-  </div><br>
-    <div class="field name">
-    <b><%= f.label :last_name %></b><br>
-    <%= f.text_field :last_name %>
-  </div><br>
-  <div class="field">
-    <b><%= f.label :country %></b><br>
-    <%= f.text_field :country %>
-  </div><br>
-  <div class="field profile">
-    <b><%= f.label :profile %></b><br>
-    <%= f.text_area :profile %>
-  </div><br>
-  <div class="field">
-    <b><%= f.label :experience %>(years)</b><br>
-    <%= f.number_field :experience %>
-  </div><br>
-  <div class="field">
-    <b><%= f.label :availability %></b><br>
-    <%= f.text_field :availability %> ( Full time, Part time)
-  </div><br>
-  <div class="field">
-    <b><%= f.label :preferred_environment %></b><br>
-    <%= f.text_field :preferred_environment %> ( Win, Mac OS, linux)
-  </div><br>
-  <div class="field experience">
-    <b><%= f.label :recent_work_experience %></b><br>
-    <%= f.text_area :recent_work_experience_list %>
-  </div><br>
-  <div class="field skills">
-    <b><%= f.label :skills %></b><br>
-    <%= f.text_area :skills_list %>
-  </div><br>
-  <div class="field education">
-    <b><%= f.label :education %></b><br>
-    <%= f.text_area :education_list %>
-  </div><br>
-  <div class="field languages">
-   <b><%= f.label :languages %></b><br>
-    <%= f.text_field :languages_list %>
-  </div><br>
-  
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-</div>
+    <div class="row">
+      <hr class="linea" align="center" width="90%"><br>
+      <div class="col-md-3 col-md-offset-1">
+        <div class="titulo"><strong>EMPLOYMENT:</strong></div>
+      </div>
+      <div class="col-md-7">
+        <div class="field employees">
+          <%= f.fields_for :work_experiences  do |work| %>
+            <%= work.label :company %><br><%= work.text_field :company %><p></p>
+            <%= work.label :job %><br><%= work.text_field :job %><p></p>
+            <%= work.label :time %>(years)<br><%= work.number_field :time %><p></p>
+            <br>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr class="linea" align="center" width="90%"><br>
+      <div class="col-md-2 col-md-offset-1">
+        <div class="titulo"><strong>SKILLS:</strong></div>
+      </div>
+      <div class="col-md-7">
+        <ul class="subtitulos">
+          <ul class="subtitulos">
+            <div class="field skills"><%= f.text_area :skills_list %><br>separate with commas</div>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row xtra">
+      <hr class="linea" align="center" width="90%"><br>
+      <div class="col-md-2 col-md-offset-1">
+        <div class="titulo"><strong>EDUCATION:</strong></div>
+      </div>
+      <div class="col-md-7">
+        <ul class="subtitulos">
+          <div class="field education">
+            <%= f.fields_for :educations  do |ed| %><br>
+              <%= ed.label :institution %><br><%= ed.text_field :institution %><p></p>
+              <%= ed.label :carreer %><br><%= ed.text_field :carreer %>
+              <br>
+            <% end %>
+          </div>
+        </ul>
+      </div>
+    </div><br><br>
+
+    <div class="actions">
+      <button type="button" class="btn btn-default">
+        <%= f.submit %>
+      </button>
+    </div>
+
+    <div class="row footer">
+      <div class="col-md-2 col-md-offset-1">
+        <a class="logo" href="/home">
+          <img class="cabecera" src="<%=image_path("small_timba.png")%>" alt="a clock">
+        </a>
+      </div>
+      <div class="col-md-4">Exclusive access to top developers</div>
+      <div class="col-md-3">Timba.co<br>Call us: 888.604.3188</div>
+    </div>
+    <br>
+  <% end %>
+</section>
